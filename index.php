@@ -18,6 +18,15 @@
       background-position: center;
     }
 
+    .desktop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 5px 5px;
+    }
 
     </style>
   </head>
@@ -37,13 +46,13 @@
         <span class="start-menu__side-banner--text">Windows 98</span>
       </div>
       <div class="start-menu__apps">
+        <div class="start-menu__app apps__address-book">
+          <img class="start-menu__app--icon apps__address-book--icon" src="./assets/icons/computer_explorer-2.png" alt="address-book" />
+          <span class="start-menu__app--icon--text apps__address-book--text">Computer</span>
+        </div>
         <div class="start-menu__app apps__notepad">
           <img class="start-menu__app--icon apps__notepad--icon" src="./assets/icons/notepad.png" alt="notepad" />
           <span class="start-menu__app--icon--text apps__notepad--text">Notepad</span>
-        </div>
-        <div class="start-menu__app apps__address-book">
-          <img class="start-menu__app--icon apps__address-book--icon" src="./assets/icons/address_book.png" alt="address-book" />
-          <span class="start-menu__app--icon--text apps__address-book--text">Address Book </span>
         </div>
         <div class="start-menu__app apps__paint">
           <img class="apps__paint--icon start-menu__app--icon" src="./assets/icons/paint.png" alt="paint" />
@@ -52,17 +61,47 @@
       </div>
     </div>
     <div class="desktop">
+      <div class="desktop__icon desktop__icon--address_book">
+        <img
+          class="desktop__icon--img"
+          src="./assets/icons/computer_explorer-2.png"
+          alt="notepad-icon"
+        />
+        <div class="desktop__icon--text">Computer</div>
+      </div>
       <div class="desktop__icon desktop__icon--notepad">
-        <img class="desktop__icon--img" src="./assets/icons/notepad.png" alt="notepad-icon" />
+        <img
+          class="desktop__icon--img"
+          src="./assets/icons/notepad.png"
+          alt="notepad-icon"
+        />
         <div class="desktop__icon--text">Notepad</div>
       </div>
-      <div class="desktop__icon desktop__icon--address_book">
-        <img class="desktop__icon--img" src="./assets/icons/address_book.png" alt="notepad-icon" />
-        <div class="desktop__icon--text">Address Book</div>
-      </div>
       <div class="desktop__icon desktop__icon--paint">
-        <img class="desktop__icon--img" src="./assets/icons/paint.png" alt="notepad-icon" />
+        <img
+          class="desktop__icon--img"
+          src="./assets/icons/paint.png"
+          alt="notepad-icon"
+        />
         <div class="desktop__icon--text">Paint</div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="app app__notepad">
+      <div class="app__header-bar app__notepad--header-bar">
+        <img class="app__header-bar--icon" src="./assets/icons/notepad.png" alt="" />
+        <span class="app__header-bar--title">Notepad</span>
+        <button class="app__header-bar--close">
+          <img src="./assets/icons/close-icon.png" alt="" />
+        </button>
+      </div>
+      <div class="app__utility">
+        <button class="app__utility--btn app__utility--save">Save</button>
+        <button class="app__utility--btn app__utility--delete">Delete</button>
+      </div>
+      <div class="notepad">
+        <textarea class="notepad__textarea" name="" id="" cols="30" rows="10"></textarea>
       </div>
     </div>
     <div class="app app__notepad">
@@ -98,6 +137,7 @@
           <label for="address">Address:</label>
           <input id="address" class="address_book__form--input" reqiured name="address" size="15" type="text" />
           <button type="submit" class="address_book__form--submit">Add</button>
+          <button type="submit" class="address_book__form--submit">Upload</button>
         </form>
       </div>
       <div class="address_book">
