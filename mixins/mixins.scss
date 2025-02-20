@@ -1,0 +1,4 @@
+@mixin default-boxshadow {
+  box-shadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+    1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}

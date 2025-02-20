@@ -1,0 +1,36 @@
+@use "./_partials/palette";
+@use "./mixins/mixins.scss";
+@use "./styles/taskbar.scss";
+@use "./styles/startmenu.scss";
+@use "./styles/desktop.scss";
+@use "./styles/address_book.scss";
+@use "./styles/applications.scss";
+@use "./styles/notepad.scss";
+@use "./styles/paint.scss";
+@use "./styles/wallpaper.scss";
+
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

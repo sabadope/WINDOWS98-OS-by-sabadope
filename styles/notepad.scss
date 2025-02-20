@@ -1,0 +1,18 @@
+@use "../_partials/palette";
+@use "../mixins/mixins.scss";
+
+.notepad {
+  width: 100%;
+  height: 100%;
+  &__textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 4px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 10px #719ece;
+    }
+  }
+}

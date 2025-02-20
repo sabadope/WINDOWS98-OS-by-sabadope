@@ -1,0 +1,68 @@
+@use "../_partials/palette";
+@use "../mixins/mixins.scss";
+
+.address_book {
+  width: 100%;
+  height: 100%;
+  background-color: palette.$white;
+  overflow-y: scroll;
+
+  &__table {
+    border-spacing: 0px;
+    width: 100%;
+    &--header {
+      @include mixins.default-boxshadow;
+      background-color: palette.$light-gray;
+      padding-top: 2px;
+    }
+
+    &--tel {
+      max-width: 70px;
+      overflow-wrap: break-word;
+    }
+
+    &--name {
+      max-width: 200px;
+      overflow-wrap: break-word;
+    }
+
+    &--address {
+      max-width: 200px;
+      overflow-wrap: break-word;
+      padding-right: 25px;
+    }
+
+    &--row {
+      position: relative;
+    }
+
+    &--close {
+      position: absolute;
+      right: 7px;
+      top: 2px;
+      cursor: pointer;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+
+    &--input {
+      margin: 0px 2px;
+      padding: 0px;
+    }
+
+    &--submit {
+      margin-left: auto;
+      margin-right: 3px;
+      @include mixins.default-boxshadow;
+      padding: 2px 7px;
+
+      &:active {
+        box-shadow: inset 4.5px 4.5px 0px -3px rgba(0, 0, 0, 0.75),
+          1px 1px 0px 0px rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+}
