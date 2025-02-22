@@ -47,8 +47,8 @@
       </div>
       <div class="start-menu__apps">
         <div class="start-menu__app apps__address-book">
-          <img class="start-menu__app--icon apps__address-book--icon" src="./assets/icons/computer_explorer-2.png" alt="address-book" />
-          <span class="start-menu__app--icon--text apps__address-book--text">Computer</span>
+          <img class="start-menu__app--icon apps__address-book--icon" src="./assets/icons/address_book.png" alt="address-book" />
+          <span class="start-menu__app--icon--text apps__address-book--text">Address Book</span>
         </div>
         <div class="start-menu__app apps__notepad">
           <img class="start-menu__app--icon apps__notepad--icon" src="./assets/icons/notepad.png" alt="notepad" />
@@ -64,10 +64,10 @@
       <div class="desktop__icon desktop__icon--address_book">
         <img
           class="desktop__icon--img"
-          src="./assets/icons/computer_explorer-2.png"
+          src="./assets/icons/address_book.png"
           alt="notepad-icon"
         />
-        <div class="desktop__icon--text">Computer</div>
+        <div class="desktop__icon--text">Address Book</div>
       </div>
       <div class="desktop__icon desktop__icon--notepad">
         <img
@@ -120,6 +120,8 @@
         <textarea class="notepad__textarea" name="" id="" cols="30" rows="10"></textarea>
       </div>
     </div>
+
+    <!--------------------------- COMPUTER CONTAINER ------------------------------>
     <div class="app app__address_book">
       <div class="app__header-bar app__address_book--header-bar">
         <img class="app__header-bar--icon" src="./assets/icons/address_book.png" alt="" />
@@ -132,12 +134,11 @@
         <form class="address_book__form">
           <label for="name">Name:</label>
           <input id="name" class="address_book__form--input" reqiured name="name" size="5" type="text" />
-          <label for="tel">Tel:</label>
-          <input id="tel" class="address_book__form--input" reqiured name="tel" size="6" type="tel" pattern="[0-9]{10}" />
+          
           <label for="address">Address:</label>
           <input id="address" class="address_book__form--input" reqiured name="address" size="15" type="text" />
           <button type="submit" class="address_book__form--submit">Add</button>
-          <button type="submit" class="address_book__form--submit">Upload</button>
+          
         </form>
       </div>
       <div class="address_book">
