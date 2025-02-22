@@ -46,10 +46,13 @@
         <span class="start-menu__side-banner--text">Windows 98</span>
       </div>
       <div class="start-menu__apps">
+
+        <!-- BOOK CONTAINER -->
         <div class="start-menu__app apps__address-book">
           <img class="start-menu__app--icon apps__address-book--icon" src="./assets/icons/address_book.png" alt="address-book" />
           <span class="start-menu__app--icon--text apps__address-book--text">Address Book</span>
         </div>
+        <!-- END BOOK CONTAINER -->
         <div class="start-menu__app apps__notepad">
           <img class="start-menu__app--icon apps__notepad--icon" src="./assets/icons/notepad.png" alt="notepad" />
           <span class="start-menu__app--icon--text apps__notepad--text">Notepad</span>
@@ -61,6 +64,7 @@
       </div>
     </div>
     <div class="desktop">
+      <!-- BOOK CONTAINER -->
       <div class="desktop__icon desktop__icon--address_book">
         <img
           class="desktop__icon--img"
@@ -69,6 +73,7 @@
         />
         <div class="desktop__icon--text">Address Book</div>
       </div>
+      <!-- END BOOK CONTAINER -->
       <div class="desktop__icon desktop__icon--notepad">
         <img
           class="desktop__icon--img"
@@ -121,7 +126,7 @@
       </div>
     </div>
 
-    <!--------------------------- COMPUTER CONTAINER ------------------------------>
+    <!-- BOOK CONTAINER -->
     <div class="app app__address_book">
       <div class="app__header-bar app__address_book--header-bar">
         <img class="app__header-bar--icon" src="./assets/icons/address_book.png" alt="" />
@@ -156,6 +161,7 @@
         </table>
       </div>
     </div>
+    <!-- END BOOK CONTAINER -->
     <div class="app app__paint">
       <div class="app__header-bar app__paint--header-bar">
         <img class="app__header-bar--icon" src="./assets/icons/paint.png" alt="" />
