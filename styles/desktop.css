@@ -1,0 +1,37 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2px 2px;
+}
+
+.desktop__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 6px;
+}
+
+.desktop__icon:active {
+  background-color: rgba(86, 86, 235, 0.582);
+  color: white;
+}
+
+.desktop__icon--text {
+  font-size: 14px;
+}

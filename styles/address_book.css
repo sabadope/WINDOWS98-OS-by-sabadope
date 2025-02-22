@@ -1,0 +1,78 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.address_book {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  overflow-y: scroll;
+}
+
+.address_book__table {
+  border-spacing: 0px;
+  width: 100%;
+}
+
+.address_book__table--header {
+  box-shadow: var(--default-boxshadow);
+  background-color: var(--light-gray);
+  padding-top: 2px;
+}
+
+.address_book__table--tel {
+  max-width: 70px;
+  overflow-wrap: break-word;
+}
+
+.address_book__table--name {
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+
+.address_book__table--address {
+  max-width: 200px;
+  overflow-wrap: break-word;
+  padding-right: 25px;
+}
+
+.address_book__table--row {
+  position: relative;
+}
+
+.address_book__table--close {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.address_book__form {
+  display: flex;
+  align-items: center;
+}
+
+.address_book__form--input {
+  margin: 0px 2px;
+  padding: 0px;
+}
+
+.address_book__form--submit {
+  margin-left: auto;
+  margin-right: 3px;
+  box-shadow: var(--default-boxshadow);
+  padding: 2px 7px;
+}
+
+.address_book__form--submit:active {
+  box-shadow: inset 4.5px 4.5px 0px -3px rgba(0, 0, 0, 0.75),
+              1px 1px 0px 0px rgba(255, 255, 255, 0.75);
+}

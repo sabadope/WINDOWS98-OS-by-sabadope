@@ -1,0 +1,56 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.paint {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.paint__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.paint__board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: white;
+  box-shadow: var(--default-boxshadow);
+}
+
+.paint__board:hover {
+  cursor: pointer;
+}
+
+.paint__btns {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.paint__btn {
+  box-shadow: var(--default-boxshadow);
+  padding: 2px;
+}
+
+.paint__btn:active {
+  box-shadow: inset 4.5px 4.5px 0px -3px rgba(0, 0, 0, 0.75),
+              1px 1px 0px 0px rgba(255, 255, 255, 0.75);
+}

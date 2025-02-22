@@ -1,0 +1,66 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.start-menu {
+  display: none;
+  background-color: var(--light-gray);
+  box-shadow: var(--default-boxshadow);
+  position: absolute;
+  bottom: 28px;
+  left: 2px;
+  height: 400px;
+  width: 200px;
+  padding: 2px 2px 0 2px;
+}
+
+.start-menu--toggle {
+  display: flex;
+}
+
+.start-menu__side-banner {
+  display: flex;
+}
+
+.start-menu__side-banner--text {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  color: var(--white);
+  font-size: 20px;
+  background-color: var(--dark-blue);
+  background: linear-gradient(rgb(44, 191, 250), var(--dark-blue));
+  padding: 10px 2px;
+}
+
+.start-menu__apps {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.start-menu__app {
+  display: flex;
+  align-items: center;
+  padding: 6px 6px;
+}
+
+.start-menu__app:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.start-menu__app--icon {
+  margin-right: 3px;
+}
+
+.start-menu__app--text {
+  font-size: 16px;
+}

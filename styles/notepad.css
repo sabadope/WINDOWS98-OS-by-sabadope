@@ -1,0 +1,28 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.notepad {
+  width: 100%;
+  height: 100%;
+}
+
+.notepad__textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 4px;
+}
+
+.notepad__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ece;
+}

@@ -1,0 +1,67 @@
+:root {
+  --gray: #818181;
+  --light-gray: #c3c3c3;
+  --white: #fdffff;
+  --dark-blue: #010081;
+  --dark-teal: #008080;
+  --black: #000000;
+  --pink: #ff0081;
+  --default-boxshadow: inset 4.5px 4.5px 0px -3px rgba(255, 255, 255, 0.75),
+                        1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+  --currently-selected: z-index: 2;
+}
+
+.app {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  width: 500px;
+  height: 480px;
+  background-color: var(--light-gray);
+  box-shadow: var(--default-boxshadow);
+  padding: 3px;
+  display: none;
+  flex-direction: column;
+}
+
+.app__header-bar {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background: linear-gradient(to right, var(--dark-blue), rgb(44, 191, 250));
+  color: white;
+  padding: 5px 3px;
+}
+
+.app__header-bar--icon {
+  height: 15px;
+  width: 15px;
+}
+
+.app__header-bar--close {
+  background-color: var(--light-gray);
+  box-shadow: var(--default-boxshadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.app__header-bar--title {
+  flex: 1;
+}
+
+.app__utility {
+  font-size: 13px;
+  padding: 2px 1px;
+}
+
+.app__utility--btn {
+  box-shadow: var(--default-boxshadow);
+  padding: 2px;
+}
+
+.app__utility--btn:active {
+  box-shadow: inset 4.5px 4.5px 0px -3px rgba(0, 0, 0, 0.75),
+              1px 1px 0px 0px rgba(255, 255, 255, 0.75);
+}
